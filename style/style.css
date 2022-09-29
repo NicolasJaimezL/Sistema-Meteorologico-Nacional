@@ -1,0 +1,179 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f0ab24;
+}
+
+header {
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 5rem;
+  text-transform: uppercase;
+  padding: 1.9rem 4rem 6rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+/* header: menu */
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  padding: 0rem 0.4rem;
+  list-style: none;
+  color: #0a0b0a;
+  border: transparent;
+}
+
+nav ul li a:hover {
+  background-color: #f0ab24;
+  color: #f8f9fa;
+}
+
+/* header: titulo y logo */
+.titulo_y_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.h1 {
+  text-decoration: none;
+  color: #0a0b0a;
+}
+h1 {
+  order: 2;
+  padding-left: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #0a0b0a;
+}
+
+.smn_logo {
+  width: 5rem;
+}
+/* galeria de tarjetas */
+main {
+  padding-top: 10rem;
+}
+.galeria_de_tarjetas {
+  margin: 0rem 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* tarjetas */
+
+.tarjeta {
+  height: fit-content;
+  border: solid 0.3rem;
+  border-radius: 2rem;
+  background-color: #f8f9fa;
+  box-shadow: 3rem 2.7rem 1rem -1.7rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.zona_de_imagen {
+  align-self: center;
+}
+
+div i {
+  font-size: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.zona_del_clima {
+  font-family: "Montserrat", sans-serif;
+  color: #f8f9fa;
+  background-color: #0a0b0a;
+  text-transform: capitalize;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.ciudad {
+  display: flex;
+  flex-direction: column;
+}
+
+.temperatura {
+  font-size: 4rem;
+  padding-left: 1rem;
+}
+
+.ciudad h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2rem;
+}
+.fecha {
+  background-color: #00e5e5;
+  font-size: 2rem;
+  padding: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+/* section PATAGONIA */
+.galeria_de_fotos {
+  margin: 0rem 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.foto_container {
+  margin: 1rem 0rem;
+  width: 35rem;
+  height: fit-content;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+}
+.foto {
+  width: 35rem;
+  height: 28rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+figcaption {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #0a0b0a;
+}
+@media screen and (max-width: 900px) {
+  .galeria_de_tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .galeria_de_tarjetas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
