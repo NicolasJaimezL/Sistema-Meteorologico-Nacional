@@ -178,7 +178,7 @@ footer {
   width: 100%;
 }
 .grid_footer {
-  padding: 1rem 1rem;
+  padding: 2rem 3rem 2rem;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 1rem;
@@ -186,18 +186,17 @@ footer {
   font-family: "Nunito Sans", sans-serif;
 }
 .redes_footer,
-.infozona_footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
+.infozona_footer,
 .direccion_footer {
   display: flex;
   flex-direction: column;
+  /*align-items: center;*/
   justify-content: space-evenly;
 }
+.redes_footer {
+  align-items: center;
+}
+
 /* media queries */
 @media screen and (max-width: 900px) {
   .galeria_de_tarjetas {
