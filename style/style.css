@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -25,13 +26,13 @@ header {
 }
 
 /* header: menu */
-nav ul {
+ul {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
 }
 
-nav ul li a {
+a {
   text-decoration: none;
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
@@ -139,6 +140,10 @@ h3 {
   padding: 2rem;
   border-bottom-right-radius: 2rem;
 }
+/* PARA QUE EL FOOTER SE MUESTRE AL FINAL DE INDEX.html (porque no tiene mucho contenido,) */
+.main_index {
+  margin-bottom: 100vh;
+}
 /* section PATAGONIA */
 .galeria_de_fotos {
   margin: 0rem 0.5rem;
@@ -167,9 +172,39 @@ figcaption {
   font-size: 2rem;
   color: #0a0b0a;
 }
+/* footer */
+footer {
+  background-color: #f8f9fa;
+  width: 100%;
+}
+.grid_footer {
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+.redes_footer,
+.infozona_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.direccion_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* media queries */
 @media screen and (max-width: 900px) {
   .galeria_de_tarjetas {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid_footer {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 500px) {
